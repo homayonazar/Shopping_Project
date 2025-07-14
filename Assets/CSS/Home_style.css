@@ -46,7 +46,7 @@ a {
 .headder {
   width: 100%;
   height: 80px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,7 +70,7 @@ a {
   display: flex;
   align-items: center;
   border: 2px solid #ccc;
-  border-radius: 30px;
+  border-radius: 10px;
   overflow: hidden;
   max-width: 350px;
   width: 100%;
@@ -103,6 +103,7 @@ a {
 
 .right_side button {
   padding: 8px 15px;
+  margin-right: 10px;
   font-size: 14px;
   border: none;
   border-radius: 5px;
@@ -112,10 +113,12 @@ a {
 }
 
 .icon i {
-  font-size: 22px;
+  font-size: 25px;
+  margin: 0 8px;
   color: #333;
   cursor: pointer;
 }
+
 
 /* ===== Sliders ===== */
 .Sliders{
@@ -124,17 +127,52 @@ a {
 
 .left_slider{
     width: 70%;
-    min-height: 500px;
-    background-color: aqua;
+    min-height: auto;
     display: inline-block;
     float: left;
 }
+
 .right_products{
-    width: 30%;
-    min-height: 500px;
-    background-color:aquamarine;
+    width: 28%;
+    min-height: 453px;
+    background-color:rgb(235, 235, 235);
     float: left;
+    border-radius: 25px;
+    margin-left: 3px;
+    border: solid 0.1px #626262;
 }
 
+.carousel-inner{
+    border-radius: 20px;
+}
+
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+$carousel-control-icon-filter:       null;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 
 
