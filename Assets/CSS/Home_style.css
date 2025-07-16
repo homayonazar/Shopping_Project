@@ -18,9 +18,7 @@ body {
 }
 
 .container {
-    width: 100%;
-        margin-bottom: 10px;
-
+    margin-bottom: 10px;
     padding: 0 160px ;}
 
 ul{
@@ -166,7 +164,7 @@ span{
 /* ===== Manu - Navigation ====== */
 .Main_menu {
     background-color: #ebebeb;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     position: relative; /* یا position: absolute / fixed اگر منو شناوره */
     z-index: 9999;
 }
@@ -334,16 +332,15 @@ nav{
 
 
 
-
 .carousel-inner{
     border-radius: 20px;
 }
-/* Slider_show_w3school */
+/* Slider_show_from_w3school */
 .slideshow-container {
   max-width: 800px;
   position: relative;
   margin: auto;
-  border-radius: 20px; /* مقدار دلخواه */
+  border-radius: 20px;
   
 }
 
@@ -427,4 +424,89 @@ nav{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+
+/* ========= Product - Section ========= */
+
+.products{
+	flex-wrap: wrap;
+
+}
+.products .container{
+    width: 100%;
+    max-width: 1570px;
+    margin: 0 auto;
+}
+.pdc_sec{
+    /* max-width: 2200px; */
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.p_box{
+    width: 23%;
+    height: 400px;
+    margin: 10px;
+    background-color: #e8e8e8;
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.p_box h2 {
+    text-align: center;
+    font-size: large;
+}
+
+.img_sec{
+    display: flex;
+    justify-content: center;
+}
+.img_sec img {
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    border-radius: 35px;
+}
+
+.p_box p {
+    font-weight: ;
+    font-size: medium;
+    text-align: center;
+}
+
+.p_box button{
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #50a4a3; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.p_box button:hover {
+    background-color: #7bbab9; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+.p_box button:active {
+    background-color: #50a4a3;
+    transform: scale(0.98);
 }
