@@ -167,10 +167,9 @@ span{
 .Main_menu {
     background-color: #ebebeb;
     border-radius: 15px;
-    
+    position: relative; /* یا position: absolute / fixed اگر منو شناوره */
+    z-index: 9999;
 }
-
-
 
 .about_icon{
     width: 17px;
@@ -179,8 +178,8 @@ span{
     background-size: cover;
     display: inline-block;
     vertical-align: -5px;
-
 }
+
 .Home_icon{
     width: 18px;
     height: 18px;
@@ -201,7 +200,10 @@ span{
     left: 0px;
     box-shadow: 0px 2px 3px ;
     display: none;
+    border-radius: 8px;
+    
 }
+
 .drop_down_menu li {
     font-size: 16px;
     padding: 10px;
@@ -211,9 +213,9 @@ span{
     background-color: #eee;
 }
 
-/* .dropdown .drop_down_menu{
+.dropdown .drop_down_menu{
     display: none;
-} */
+}
 .dropdown:hover .drop_down_menu{
     display: block;
 }
@@ -222,6 +224,7 @@ span{
 nav{
     display: inline-block;
     margin: 5px;
+    
 
 }
 .nav_ul {
@@ -240,65 +243,188 @@ nav{
 
 
 /* ===== Sliders ===== */
-.Sliders{
+.Sliders {
     margin-top: 10px;
+    
+}
 
+.Sliders .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .left_slider{
-    width: 70%;
     min-height: 453px;
-    background-color:rgb(238, 238, 238);
-    float: left;
-    border-radius: 25px;
+    /* background-color:rgb(238, 238, 238); */
+    border-radius: 25px ;
     margin-left: 3px;
-    border: solid 0.1px #626262;
+    /* border: solid 0.1px #626262; */
     display: inline-block;
-    float: left;
 }
 
 .right_products{
-    width: 28%;
-    min-height: 453px;
+    width: 25%;
+    min-height: 400px;
     background-color:rgb(238, 238, 238);
-    float: left;
-    border-radius: 25px;
+    border-radius: 15px;
     margin-left: 3px;
     border: solid 0.1px #626262;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.produt_box{
+    width: 95%;
+    margin: 5px;
+    display: inline-block;
+    background-color:rgb(247, 247, 247);
+    height: 70px;
+    border: solid 0.05px #b1b1b1;
+    border-radius: 10px;
+
+}
+
+
+.img_box{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #007bff;
+    float: right;
+    border-radius: 10px;
+}
+.img_box img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produt_box h2 {
+    margin: 10px;
+    text-align: left;
+    font-weight:800 ;
+    font-size: medium;
+    display: -webkit-box; 
+/* Prevents the box contents from overflowing when the size changes */
+}
+
+.produt_box p {
+    text-align: left;
+    font-weight:800 ;
+    font-size: medium;
+    padding: 0px 0 0 10px;
+    font-weight:100 ;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .carousel-inner{
     border-radius: 20px;
 }
+/* Slider_show_w3school */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  border-radius: 20px; /* مقدار دلخواه */
+  
+}
 
-/* 
-$carousel-control-color:             $white;
-$carousel-control-width:             15%;
-$carousel-control-opacity:           .5;
-$carousel-control-hover-opacity:     .9;
-$carousel-control-transition:        opacity .15s ease;
-$carousel-control-icon-filter:       null;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+    border-radius: 15px;
+    overflow: auto;
+  
+}
 
-$carousel-indicator-width:           30px;
-$carousel-indicator-height:          3px;
-$carousel-indicator-hit-area-height: 10px;
-$carousel-indicator-spacer:          3px;
-$carousel-indicator-opacity:         .5;
-$carousel-indicator-active-bg:       $white;
-$carousel-indicator-active-opacity:  1;
-$carousel-indicator-transition:      opacity .6s ease;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-$carousel-caption-width:             70%;
-$carousel-caption-color:             $white;
-$carousel-caption-padding-y:         1.25rem;
-$carousel-caption-spacer:            1.25rem;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-$carousel-control-icon-width:        2rem;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-$carousel-transition-duration:       .6s;
-$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
- */
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
