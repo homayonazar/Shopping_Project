@@ -576,3 +576,78 @@ nav{
 .right_ad img:hover{
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
 }
+
+
+
+
+/* ========= Footer ========= */
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #295858;
+}
+
+footer .container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+    margin: 0 auto;
+    gap: 8%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: #c4c4c4 0.1px dotted;
+
+}
+
+
+.First_column{
+    width: 25%;
+    height: 350px;
+    background-color: #abdedd;
+    border-radius: 5px;
+}
+
+.Sec_column{
+    width: 25%;
+    height: 350px;
+    background-color: #abdedd;
+    border-radius: 5px;
+
+}
+
+.Third_column{
+    width: 25%;
+    height: 350px;
+    background-color: #abdedd;
+    border-radius: 5px;
+
+}
+
+.copyright_sec{
+    width: 100%;
+    height: auto;
+    background-color: #295858;
+
+}
+
+.copyright_sec p{
+    text-align: center;
+    color: #dafffe;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 400;
+    font-size: medium;
+    padding: 10px 0px;
+}
+
+.copyright_sec a{
+    text-align: center;
+    color: #dafffe;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 400;
+    font-size: medium;
+    padding: 10px 0px;
+}
