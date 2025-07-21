@@ -2,8 +2,10 @@
 .contact_section{
     width: 100%;
     height: auto;
-    background-color: #ffffff;
-    border-radius: 15px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 0.1px dotted #6c757d;
 }
 
 .contact_us h1{
@@ -118,6 +120,14 @@ hr {
 .contact_right p {
     font-size: large;
     font-weight:200 ;
+}
+
+
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 
