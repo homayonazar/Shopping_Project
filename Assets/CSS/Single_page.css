@@ -128,7 +128,7 @@
 }
 
 /* Dropdown */
-.dropdown {
+/* .dropdown {
     position: relative;
     display: inline-block;
 }
@@ -172,7 +172,22 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+} */
+
+
+.Clothe_size{
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: #6c757d dotted 0.1px;
+    
 }
+
+
+
+
+
 
 /*==== coments ======*/
 
