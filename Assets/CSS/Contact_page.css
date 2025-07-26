@@ -28,6 +28,12 @@
     /* background-color: #007bff;
     border: 2px #dc2424; */
 }
+@media screen and (max-width : 540px ){
+    .contact_input{
+    width: 100%;}
+    /* .contact_right{width: 100%;}
+    .contact_left{width: 100%;} */
+}
 
 .contact_input label {
     margin-bottom :10px;

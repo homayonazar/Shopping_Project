@@ -1,5 +1,12 @@
 /* == Primary Styles == */
 
+:root{
+    --myGreen : #d8efee;
+    --myBlue  : #d9ebf6;
+    --myFontColor : #2aaac6;
+    --myWhite : #eff1f4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -183,6 +190,22 @@ span{
 
 
 
+
+.Day-light{
+    width: 75px;
+}
+.Day-light i{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 2px;
+    color: #ededed;
+}
+
+
+
+
+
+
 /* ===== Manu - Navigation ====== */
 .Main_menu {
     background-color: #ebebeb;
@@ -223,14 +246,16 @@ span{
     border-radius: 8px;
     
 }
-
+.search_box i {
+    color: #fff;
+}
 .drop_down_menu li {
     font-size: 16px;
     padding: 10px;
 }
 
 .drop_down_menu li:hover {
-    background-color: #abdedd;
+    background-color: var(--myGreen);
     border-radius: 5px;
 }
 
@@ -277,6 +302,7 @@ nav{
 }
 
 .left_slider{
+    width: 70%;
     min-height: 453px;
     /* background-color:rgb(238, 238, 238); */
     border-radius: 25px ;
@@ -287,7 +313,9 @@ nav{
 
 .right_products{
     width: 25%;
+    height: auto;
     min-height: 400px;
+    
     background-color:rgb(238, 238, 238);
     border-radius: 15px;
     margin-left: 3px;
@@ -301,6 +329,7 @@ nav{
 .produt_box{
     width: 95%;
     margin: 5px;
+    overflow: hidden;
     display: inline-block;
     background-color:rgb(247, 247, 247);
     height: 70px;
@@ -578,7 +607,7 @@ nav{
 .left_ad{
     width: 23%;
     height: 344px;
-    background-color: #7bbab9;
+    background-color: var(--myGreen);
     margin: 15px;
     border-radius: 15px;
 }
@@ -762,6 +791,8 @@ footer .container{
     border-radius: 10px;
     margin-top: 15px;
 }
+
+
 
 
 
