@@ -26,7 +26,16 @@
     h2{text-align: center;}
     .First_column{width: 50%;}
     .Sec_column{display: 50%;}
+    
 }
+
+@media screen and (max-width : 750px ) {
+    .logo h1  {font-size: x-large;}
+    .right_side {display: none;}
+    .Third_column{display:none}
+
+}
+
 
 
 @media screen and (max-width : 540px ) {
@@ -45,8 +54,10 @@
     min-height:0;
     width: 100%;}
     h2{text-align: center;}
+    .logo h1  {font-size: large;}
 
     .contact_input{width: 100%;}
+
 
     .main_header.container{width: 100;
     padding: 6px 0px;}
@@ -58,6 +69,10 @@
         align-items: center;
         align-content: stretch;
         width: 80%;
+    }
+
+    .copyright_sec p{
+        margin: 0 10px;
     }
 }
 

@@ -103,7 +103,13 @@ span{
 
 
 
-
+.logo h1 {
+    font-size:x-large ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight:bolder ;
+    color: #333;
+    text-shadow: 2px 5px 5px var(--myGreen);
+}
 
 
 
