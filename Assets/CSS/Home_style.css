@@ -207,6 +207,66 @@ span{
     color: #ededed;
 }
 
+.main_header{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-start;
+}
+
+
+
+.hamburgerMenu{
+    width: 30px;
+    height: 30px;
+    background-color: #499694;
+    border-radius: 2px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+
+    position: fixed;
+    margin: 25px 225px 0px 0px;
+    cursor: pointer;
+    right: -200px;
+    transition: ease 0.3s;
+
+    z-index: 10000;
+
+
+}
+
+.hamburger{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 2px 0;
+
+}
+
+
+.sideMenu{
+    width: 200px;
+    height: 100%;
+    background-color: #b9b9b9;
+    position: fixed;
+    right: -200px;
+    transition: ease 0.3s;
+    z-index: 10000;
+}
+
+
+.main_header .sideMenu .nav{
+    margin: 50px;
+}
+
+
+
 
 
 
@@ -305,10 +365,11 @@ nav{
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    
 }
 
 .left_slider{
-    width: 70%;
+    /* width: 70%; */
     min-height: 453px;
     /* background-color:rgb(238, 238, 238); */
     border-radius: 25px ;
@@ -320,16 +381,15 @@ nav{
 .right_products{
     width: 25%;
     height: auto;
-    min-height: 400px;
-    
+    min-height: 300px;
     background-color:rgb(238, 238, 238);
     border-radius: 15px;
     margin-left: 3px;
     border: solid 0.1px #626262;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; */
 }
 
 .produt_box{
@@ -399,7 +459,7 @@ nav{
 }
 /* Slider_show_from_w3school */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 845px;
   position: relative;
   margin: auto;
   border-radius: 20px;

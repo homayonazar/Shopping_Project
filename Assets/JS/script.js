@@ -28,5 +28,25 @@ function showSlides(n) {
 }
 
 
+////////////////////////////////////
+// Side Menu For Small Screen //
+
+let hamburg = document.getElementById("hamburgerMenu");
+let sideM = document.getElementById("sideMenu");
+
+hamburg.addEventListener("click", function () {
+    const currentRight = getComputedStyle(hamburg).right;
+
+    if (currentRight === "-200px") {
+        hamburg.style.right = "0px";
+        sideM.style.right = "0px";
+    } else {
+        hamburg.style.right = "-200px";
+        sideM.style.right = "-200px";
+    }
+});
+
+
+
 
 

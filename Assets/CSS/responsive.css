@@ -1,7 +1,19 @@
+@media screen and (max-width : 1500px ) {
+    .container {
+        width: 100%;
+        padding: 0 100px ;    }
+            .hamburgerMenu{display: none;}
+    .sideMenu{display:none ;}
+
+}
+
+
 @media screen and (max-width : 1300px ) {
     .container {
         width: 100%;
         padding: 0 50px ;    }
+            .hamburgerMenu{display: none;}
+    .sideMenu{display:none ;}
 
 }
 
@@ -26,6 +38,8 @@
     h2{text-align: center;}
     .First_column{width: 50%;}
     .Sec_column{display: 50%;}
+    .hamburgerMenu{display: none;}
+    .sideMenu{display:none ;}
     
 }
 
@@ -74,6 +88,10 @@
     .copyright_sec p{
         margin: 0 10px;
     }
+
+
+        .hamburgerMenu{display:flex;}
+    .sideMenu{display:flex ;}
 }
 
 
