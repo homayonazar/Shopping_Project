@@ -196,34 +196,40 @@
     background-color: #f2f2f2;
     margin: 30px 0;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .coment_section h2 {
     color: #333;
-    padding: 15px;
+    padding: 10px;
+    font-size: 22px;
 }
 
 .comment_sec {
-    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .cmnt_brdr {
+    flex: 0 0 calc(50% - 7.5px);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #e7e7e7;
-    border-radius: 20px;
-    padding: 20px;
-    gap: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 15px;
+    box-sizing: border-box;
 }
-.cmnt_brdr:hover{
-    background-color: #dedede;
 
+.cmnt_brdr:hover {
+    background-color: #dedede;
 }
 
 .pic_sec {
-    flex: 0 0 150px;
-    height: 150px;
+    flex: 0 0 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,27 +239,42 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
 }
 
 .cmnt_sec {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
 }
 
 .cmnt_sec span {
     display: inline-block;
-    margin-right: 20px;
-    font-weight: bold;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .cmnt_sec p {
-    margin-top: 10px;
-    font-size: 16px;
-    user-select: none;
+    margin-top: 8px;
+    font-size: 14px;
+    /* user-select: none; */
+    line-height: 1.4;
 }
 
+/* ✅ ریسپانسیو موبایل */
+@media (max-width: 768px) {
+    .cmnt_brdr {
+        flex: 0 0 100%;
+    }
+}
+
+/* ✅ ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    .cmnt_brdr {
+        flex: 0 0 100%;
+    }
+}
 
 
 @media screen and (max-width : 540px ) {
@@ -264,4 +285,29 @@
 @media screen and (max-width : 700px ) {
     .right_section{width: 100%;}
     .left_section{width: 100%;}
+}
+
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: var(--myFontColor);
+  color: white; 
+  cursor: pointer;
+  padding: 15px 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  
+}
+
+#myBtn:hover {
+  background-color: #555;
+  scale: 1.05;
 }

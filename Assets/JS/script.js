@@ -1,32 +1,33 @@
+console.log("script.js connected!");
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 }
-
 
 ////////////////////////////////////
 // Side Menu For Small Screen //
@@ -35,15 +36,15 @@ let hamburg = document.getElementById("hamburgerMenu");
 let sideM = document.getElementById("sideMenu");
 
 hamburg.addEventListener("click", function () {
-    const currentRight = getComputedStyle(hamburg).right;
+        const currentRight = getComputedStyle(hamburg).right;
 
-    if (currentRight === "-200px") {
-        hamburg.style.right = "0px";
-        sideM.style.right = "0px";
-    } else {
-        hamburg.style.right = "-200px";
-        sideM.style.right = "-200px";
-    }
+        if (currentRight === "-200px") {
+                hamburg.style.right = "0px";
+                sideM.style.right = "0px";
+        } else {
+                hamburg.style.right = "-200px";
+                sideM.style.right = "-200px";
+        }
 });
 
 /////////////////////////////////////////////
@@ -54,18 +55,31 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 
 function topFunction() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
+///////////////////////////////////
+// LoadMore
 
+document.addEventListener("DOMContentLoaded", function () {
+    const loadMoreButtons = document.querySelectorAll(".load-more");
+
+    loadMoreButtons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const commentText = btn.previousElementSibling;
+        commentText.textContent += " Voluptatibus culpa deserunt neque temporibus veniam rerum sunt deleniti illo ullam laboriosam in nihil facere omnis atque commodi ipsam hic illum corporis necessitatibus voluptate, ducimus sapiente dignissimos, sed ad. Impedit, nulla voluptate?";
+        btn.style.display = "none";  
+      });
+    });
+  });
