@@ -83,3 +83,41 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  /////////////////=== Dark | Light theme ==//////////////////
+
+  function toggleDarkMode() {
+    const root = document.documentElement;
+    const moonIcon = document.querySelector('.moon-icon');
+    const sunIcon = document.querySelector('.sun-icon');
+
+    // theme change
+    root.classList.toggle('dark');
+
+    // icon change
+    if (root.classList.contains('dark')) {
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'inline';
+    } else {
+        moonIcon.style.display = 'inline';
+        sunIcon.style.display = 'none';
+    }
+
+    localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const root = document.documentElement;
+    const moonIcon = document.querySelector('.moon-icon');
+    const sunIcon = document.querySelector('.sun-icon');
+
+    if (savedTheme === 'dark') {
+        root.classList.add('dark');
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'inline';
+    } else {
+        moonIcon.style.display = 'inline';
+        sunIcon.style.display = 'none';
+    }
+});
