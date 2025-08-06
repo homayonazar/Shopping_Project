@@ -3,6 +3,7 @@
 :root {
     --myGreen: #d8efee;
     --myBlue: #d9ebf6;
+    --navbar: #ebebeb ;
     --myFONT-w: #ffffff;
     --myFONT-B: #000000;
     --myFontColor: #2aaac6;
@@ -17,14 +18,16 @@
 .dark {
     --myGreen: #1d2b2a;
     --myBlue: #162c3b;
+    --navbar: #414a4b ;
     --myFontColor: #90e0ef;
     --myWhite: #0f2027;
     --myFONT-w: #0f2027;
     --myFONT-B: #ffffff;
     --myBG: linear-gradient(90deg,
-        rgb(20, 30, 48) 0%,
-        rgb(36, 59, 85) 50%,
-        rgb(20, 30, 48) 100%);
+    rgba(0, 0, 0, 1) 0%,
+    rgba(67, 76, 77, 1) 50%, 
+    rgba(32, 36, 37, 1) 100%,
+    rgba(32, 36, 37, 1) 100%);
     --textColor: #ffffff;
 }
 
@@ -123,7 +126,7 @@ span{
     font-size:x-large ;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-weight:bolder ;
-    color: #333;
+    color: var(--textColor);
     text-shadow: 2px 5px 5px var(--myGreen);
 }
 
@@ -205,9 +208,8 @@ span{
 .icon i {
   font-size: 25px;
   margin: 0 8px;
-  color: #333;
+  color: var(--textColor);
   cursor: pointer;
-  color: #295858;
 }
 
 
@@ -311,7 +313,7 @@ span{
 
 /* ===== Manu - Navigation ====== */
 .Main_menu {
-    background-color: #ebebeb;
+    background-color: var(--navbar);
     /* border-radius: 15px; */
     position: relative; /* یا position: absolute / fixed اگر منو شناوره */
     z-index: 9999;
@@ -358,7 +360,7 @@ span{
 }
 
 .drop_down_menu li:hover {
-    background-color: var(--myGreen);
+    background-color: #d8efee;
     border-radius: 5px;
 }
 
@@ -378,6 +380,7 @@ nav{
 }
 .nav_ul {
     display: inline-block;
+    
 }
 
 .nav_ul > li {
@@ -386,6 +389,14 @@ nav{
     padding-right: 20px;
     margin: 4px;
     position: relative; /* برای منو ها */
+}
+.nav_ul > li > a,
+.nav_ul > li > a >i>span {
+    color: var(--textColor);
+}
+.nav_ul > li > a > i,
+.nav_ul > li > a >span {
+    color: var(--textColor);
 }
 
 
