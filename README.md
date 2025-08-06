@@ -11,8 +11,6 @@ A modern and responsive **online store frontend** built with **HTML**, **CSS**, 
 - 🛒 Shopping cart UI (frontend only)  
 - ✨ Modern & clean design  
 - 📌 Navigation bar & footer  
-- 📞 Contact & About pages (UI only)
-
 ---
 
 ## 🛠️ Technologies Used
