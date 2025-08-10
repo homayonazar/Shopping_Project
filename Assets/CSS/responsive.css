@@ -15,6 +15,7 @@
     }
     .hamburgerMenu { display: none; }
     .sideMenu { display: none; }
+    
 }
 
 @media screen and (max-width : 1300px ) {
@@ -24,20 +25,22 @@
     }
     .hamburgerMenu { display: none; }
     .sideMenu { display: none; }
+    .right_products{width: 100%;}
 }
 
 
-@media screen and (max-width : 1000px ) {
+@media screen and (max-width : 1050px )/* Ipad mini*/ {
     .container {
         width: 100%;
         padding: 0 20px ;
     }
 
-    .p_box{width: 48%;}
+    .p_box{width: 43%;}
+    .Third_column{display: none;}
 
     .nav_ul {display: none;}
-    .left_ad {width: 250px;}
-    .right_ad {display: none;}
+    .left_ad {display: none;}
+    .right_ad {width: 88%;}
     .intro_left{display: none;}
     .intro_right{width: 100%;}
     .right_products{width: 100%;}
@@ -56,6 +59,8 @@
     .logo h1  {font-size: x-large;}
     .right_side {display: none;}
     .Third_column{display:none}
+        .right_ad {display: none;}
+
 
 }
 
@@ -78,11 +83,14 @@
     width: 100%;}
     h2{text-align: center;}
     .logo h1  {font-size: large;}
+        .right_ad {display: none;}
+
+    
 
     .contact_input{width: 100%;}
-    .search_box{
+    /* .search_box{
         width: 190px;
-    }
+    } */
 
 
  */

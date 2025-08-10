@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shooping | Home Page</title>
     <link rel="icon" type="Favicon" href="./Assets/IMAGES/Favicon.png">
-    <link rel="stylesheet" href="./Assets/CSS/Home_style.css">
-    <link rel="stylesheet" href="./Assets/CSS/responsive.css">
+    <link rel="stylesheet" href="./Assets/CSS/Home_style.css?v=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/responsive.css?v=1.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <meta name="description" content="Buy high-quality products at the best prices.[]" />
@@ -16,12 +16,23 @@
 <body>
 
 <Header>
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
         <div class="main_header">
             <div class="container">
                 <div class="headder">
                     <div class="left_side">
                         <div class="logo">
-                            <h1>Shopping-Project</h1>
+                            <img class="logo_class" src="./Assets/IMAGES/Logo Of shopping.png" alt="">
+                            <h2>Homayonazar</h2>
                         </div>
                         <div class="search_box">
                             <form action="" method="">
@@ -321,6 +332,6 @@
 
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
-    <script src="./Assets/JS/script.js"></script>
+    <script src="./Assets/JS/script.js?v=1.0"></script>
 </body>
 </html>
