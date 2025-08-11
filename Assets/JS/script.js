@@ -118,3 +118,25 @@ window.addEventListener('DOMContentLoaded', () => {
         sunIcon.style.display = 'none';
     }
 });
+
+
+
+
+// Popup login menu 
+
+
+let login_btn = document.getElementById("login_btn");
+let popup_menu = document.getElementById("popup_login");
+let close_btn = document.getElementById("close");
+
+login_btn.addEventListener("click", function(){
+    if (popup_menu.style.visibility === "visible") {
+        popup_menu.style.visibility = "hidden";
+    } else {
+        popup_menu.style.visibility = "visible";
+    }
+});
+
+close_btn.addEventListener("click", function(){
+    popup_menu.style.visibility = "hidden";
+});
