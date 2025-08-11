@@ -427,6 +427,38 @@ span{
     text-decoration: underline;
 }
 
+/* Cart Menu */
+.cart_side {
+    right: -280px;
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    z-index: 99999;
+    background-color: var(--myGreen);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.cart_side h2 {
+    text-align: center;
+    color: var(--text);
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.box {
+    width: 80%;
+    height: 80px;
+    background-color: var(--navbar);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.box p {
+    font-size: 20px;
+    color: var(--text);
+    text-align: center;
+    margin-top: 10px;
+}
 
 
 
