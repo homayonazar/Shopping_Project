@@ -336,6 +336,7 @@ span{
     top: 10px;
     right: 10px;
     width: 35px;
+    color: var(--bg);
     height: 20px;
     cursor: pointer;
     display: flex;
@@ -343,6 +344,7 @@ span{
     justify-content: center;
     border-radius: 5px;
     background: var(--text);
+    font-size: x-large;
 }
 
 .popup_login {
@@ -756,14 +758,14 @@ nav{
     width: 23%;
     height: 400px;
     margin: 10px;
-    background-color: #e8e8e8;
+    background-color: var(--table);
     border: 1px solid #bbb;
     border-radius: 15px;
     overflow: hidden;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .p_box:hover{
-    background-color: #dedede;
+    background-color: var(--myGreen);
 
 }
 
@@ -777,7 +779,10 @@ nav{
 .p_box h2 {
     text-align: center;
     font-size: large;
+    color: var(--text);
+    
 }
+
 
 .img_sec{
     display: flex;
