@@ -167,16 +167,26 @@ let notification = document.getElementById("notification");
 let close_notif = document.getElementById("close_notif");
 let notif_btn = document.getElementById("notif_btn");
 
-notif_btn.addEventListener("click", function() {
-  if (notification.style.right === "0px") {
-    notification.style.right = "-300px";
-  } else {
-    notification.style.right = "0px";
-  }
+// notif_btn.addEventListener("click", function() {
+//   if (notification.style.right === "0px") {
+//     notification.style.right = "-300px";
+//   } else {
+//     notification.style.right = "0px";
+//   }
+// });
+
+// close_notif.addEventListener("click", function(){
+//     notification.style.right = "-300px";
+// })
+
+// use class change method 
+notif_btn.addEventListener("click", function () {
+    notification.classList.toggle("show");
 });
 
-close_notif.addEventListener("click", function(){
-    notification.style.right = "-300px";
-})
+close_notif.addEventListener("click", function () {
+    notification.classList.remove("show");
+});
+
 
 

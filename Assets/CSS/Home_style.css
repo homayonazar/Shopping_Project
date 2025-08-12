@@ -486,15 +486,29 @@ span{
 
 
 /* Notification Popup */
-#notification{
+#notification {
     position: fixed;
     z-index: 99999;
     width: 300px;
     height: 300px;
     top: 10px;
-    right: -300px;
+    right: 30px;
     background-color: var(--myGreen);
-    transition: right 0.3s ease;
+    border-radius: 10px;
+    overflow: scroll;
+
+    transform: scale(0.1);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#notification.show {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    
 }
 
 #notification h2 {
@@ -502,24 +516,25 @@ span{
     margin: 20px;
 }
 
-#notif_box{
+#notif_box {
     background-color: var(--myFONT-w);
     border-radius: 10px;
     margin: 10px;
 }
+
 #notif_box h3 {
     font-size: medium;
     padding: 10px 0px 10px 10px;
     color: var(--text);
 }
+
 #notif_box p {
     font-size: 15px;
     padding: 10px 0px 10px 10px;
     color: var(--text);
-
 }
 
-#close_notif{
+#close_notif {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -540,7 +555,7 @@ span{
 .Main_menu {
     background-color: var(--navbar);
     /* border-radius: 15px; */
-    position: relative; /* یا position: absolute / fixed اگر منو شناوره */
+    position: relative;
     z-index: 9999;
 }
 
