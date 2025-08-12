@@ -329,14 +329,233 @@ span{
   scale: 1.05;
 }
 
+/* Pop Up login menu */
 
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    color: var(--bg);
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: var(--text);
+    font-size: x-large;
+}
+
+.popup_login {
+    width: 350px;
+    max-width: 90%;
+    background-color: var(--navbar, #fff);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 99999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.popup_login h2 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.popup_login label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.popup_login input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid var(--text);
+    box-sizing: border-box;
+    font-size: 0.95rem;
+}
+
+.popup_login input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.popup_login button {
+    width: 100%;
+    height: 40px;
+    background: #007BFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.popup_login button:hover {
+    background: #0056b3;
+}
+
+.popup_login a {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.popup_login a:hover {
+    text-decoration: underline;
+}
+
+/* Cart Menu */
+#cart_side {
+    right: -280px;
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    z-index: 99999;
+    background-color: var(--myGreen);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border: 0.1px dotted var(--text);
+
+    transition: right 0.3s ease;
+}
+
+#cart_side.active {
+    right: 0;
+}
+
+#cart_side h2 {
+    text-align: center;
+    color: var(--text);
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.box {
+    width: 80%;
+    height: 80px;
+    background-color: var(--navbar);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.box p {
+    font-size: 20px;
+    color: var(--text);
+    text-align: center;
+    margin-top: 10px;
+}
+
+#close_cart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    color: var(--bg);
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: var(--text);
+    font-size: x-large;
+}
+
+
+/* Notification Popup */
+#notification {
+    position: fixed;
+    z-index: 99999;
+    width: 300px;
+    height: 300px;
+    top: 10px;
+    right: 30px;
+    background-color: var(--myGreen);
+    border-radius: 10px;
+    overflow: scroll;
+
+    transform: scale(0.1);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#notification.show {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+#notification h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+#notif_box {
+    background-color: var(--myFONT-w);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#notif_box h3 {
+    font-size: medium;
+    padding: 10px 0px 10px 10px;
+    color: var(--text);
+}
+
+#notif_box p {
+    font-size: 15px;
+    padding: 10px 0px 10px 10px;
+    color: var(--text);
+}
+
+#close_notif {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    color: var(--bg);
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: var(--text);
+    font-size: x-large;
+}
 
 
 /* ===== Manu - Navigation ====== */
 .Main_menu {
     background-color: var(--navbar);
     /* border-radius: 15px; */
-    position: relative; /* یا position: absolute / fixed اگر منو شناوره */
+    position: relative;
     z-index: 9999;
 }
 
@@ -463,7 +682,7 @@ nav{
 }
 
 .produt_box{
-    width: 95%;
+    width: 97.5%;
     margin: 5px;
     overflow: hidden;
     display: inline-block;
@@ -660,14 +879,14 @@ nav{
     width: 23%;
     height: 400px;
     margin: 10px;
-    background-color: #e8e8e8;
+    background-color: var(--table);
     border: 1px solid #bbb;
     border-radius: 15px;
     overflow: hidden;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .p_box:hover{
-    background-color: #dedede;
+    background-color: var(--myGreen);
 
 }
 
@@ -681,7 +900,10 @@ nav{
 .p_box h2 {
     text-align: center;
     font-size: large;
+    color: var(--text);
+    
 }
+
 
 .img_sec{
     display: flex;

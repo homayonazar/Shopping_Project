@@ -47,16 +47,33 @@
                             <i class="fa-regular fa-moon moon-icon"></i>
                             <i class="fa-regular fa-sun sun-icon" style="display: none;"></i>
                         </button>
-                        <button>Login | Sign up</button>
+                        <button id="login_btn">Login | Sign up</button>
                         <div class="icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <i class="fa-solid fa-bell"></i>
+                        <i id="cart_btn" class="fa-solid fa-cart-shopping"></i>
+                        <i id="notif_btn" class="fa-solid fa-bell"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
 
+            <!-- Login - PopUp -->
+            <div id="popup_login" class="popup_login">
+                <button id="close">&times;</button>
+                <h2>Login | Sign up</h2>
+                <label for="username">Username:</label>
+                <input id="username" type="text" placeholder="Enter your username">
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="Enter your password">
+                <button>Enter</button>
+                <a href="#">You don't have an account? Click here</a>
+            </div>
+
+
+
+
+
+            <!-- NavMenu in small size -->
             <div id="hamburgerMenu" class="hamburgerMenu">
                 <div class="hamburger"></div>
                 <div class="hamburger"></div>
@@ -74,6 +91,48 @@
                     </ul>
                 </nav>
             </div>
+
+
+
+            <!-- Cart Side Menu -->
+            <div id="cart_side">
+                <button id="close_cart">&times;</button>
+                <h2><u>Cart</u></h2>
+                <div class="box">
+                    <p>Your Cart is EMPTY</p>
+                </div>
+            </div>
+
+
+            <!-- Notification Popup -->
+            <div id="notification">
+                <button id="close_notif">&times;</button>
+                <h2><u>Notifications</u></h2>
+                <div id="notif_box">
+                    <h3>notif_1</h3>
+                    <p>You don't have new messeges</p>
+                </div>
+                <div id="notif_box">
+                    <h3>notif_2</h3>
+                    <p>You don't have new messeges</p>
+                </div>
+                <div id="notif_box">
+                    <h3>notif_3</h3>
+                    <p>You don't have new messeges</p>
+                </div>
+                <div id="notif_box">
+                    <h3>notif_4</h3>
+                    <p>You don't have new messeges</p>
+                </div>
+                <div id="notif_box">
+                    <h3>notif_5</h3>
+                    <p>You don't have new messeges</p>
+                </div>
+            </div>
+
+
+
+
 
 
 
@@ -195,7 +254,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 5.jpg" alt="">
                         </div>
-                        <h2><a href="./Assets/PAGES/single_page.html">Clothe number 1</a></h2>
+                        <h2><a href="./Assets/PAGES/single_page.html" style="color: var(--text);">Clothe number 1</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">199$</span></p>
                         <button>Add to Cart</button>
@@ -206,7 +265,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 6.jpg" alt="">
                         </div>
-                        <h2><a href="./Assets/PAGES/single_page.html">Clothe number 2</a></h2>
+                        <h2><a href="./Assets/PAGES/single_page.html"style="color: var(--text);">Clothe number 2</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">299$</span></p>
                         <button>Add to Cart</button>
@@ -217,7 +276,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 10.jpg" alt="">
                         </div>
-                        <h2><a href="./Assets/PAGES/single_page.html">Clothe number 3</a></h2>
+                        <h2><a href="./Assets/PAGES/single_page.html"style="color: var(--text);">Clothe number 3</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">399$</span></p>
                         <button>Add to Cart</button>
@@ -228,7 +287,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 8.jpg" alt="">
                         </div>
-                        <h2><a href="./Assets/PAGES/single_page.html">Clothe number 4</a></h2>
+                        <h2><a href="./Assets/PAGES/single_page.html"style="color: var(--text);">Clothe number 4</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">499$</span></p>
                         <button>Add to Cart</button>
@@ -257,7 +316,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 7.jpg" alt="">
                         </div>
-                        <h2><a href="/Assets/PAGES/single_page.html">Clothe number 1</a></h2>
+                        <h2><a href="/Assets/PAGES/single_page.html"style="color: var(--text);">Clothe number 1</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">49$</span></p>
                         <button>Add to Cart</button>
@@ -268,7 +327,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 2.jpg" alt="">
                         </div>
-                        <h2><a href="/Assets/PAGES/single_page.html">Clothe number 2</a></h2>
+                        <h2><a href="/Assets/PAGES/single_page.html"style="color: var(--text);">Clothe number 2</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">59$</span></p>
                         <button>Add to Cart</button>
@@ -279,7 +338,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 3.jpg" alt="">
                         </div>
-                        <h2><a href="/Assets/PAGES/single_page.html">Clothe number 3</a></h2>
+                        <h2><a href="/Assets/PAGES/single_page.html"style="color: var(--text);">Clothe number 3</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">69$</span></p>
                         <button>Add to Cart</button>
@@ -290,7 +349,7 @@
                         <div class="img_sec">
                             <img src="./Assets/IMAGES/Product_images/img - 4.jpg" alt="">
                         </div>
-                        <h2><a href="/Assets/PAGES/single_page.html">Clothe number 4</a></h2>
+                        <h2><a href="/Assets/PAGES/single_page.html"style="color: var(--text);">Clothe number 4</a></h2>
                         <p>The Description of this product</p>
                         <p class="price">Price : <span class="amount">79$</span></p>
                         <button>Add to Cart</button>

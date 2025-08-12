@@ -118,3 +118,75 @@ window.addEventListener('DOMContentLoaded', () => {
         sunIcon.style.display = 'none';
     }
 });
+
+
+
+
+// Popup login menu 
+
+
+let login_btn = document.getElementById("login_btn");
+let popup_menu = document.getElementById("popup_login");
+let close_btn = document.getElementById("close");
+
+login_btn.addEventListener("click", function(){
+    if (popup_menu.style.visibility === "visible") {
+        popup_menu.style.visibility = "hidden";
+    } else {
+        popup_menu.style.visibility = "visible";
+    }
+});
+
+close_btn.addEventListener("click", function(){
+    popup_menu.style.visibility = "hidden";
+});
+
+
+// Cart Click :
+
+let cart_btn = document.getElementById("cart_btn");
+let cart_side = document.getElementById("cart_side");
+let close_cart = document.getElementById("close_cart");
+
+
+cart_btn.addEventListener("click", function() {
+  if (cart_side.style.right === "0px") {
+    cart_side.style.right = "-280px";
+  } else {
+    cart_side.style.right = "0px";
+  }
+});
+
+close_cart.addEventListener("click",function(){
+    cart_side.style.right = "-280px";
+})
+
+// Notification - close 
+
+let notification = document.getElementById("notification");
+let close_notif = document.getElementById("close_notif");
+let notif_btn = document.getElementById("notif_btn");
+
+// notif_btn.addEventListener("click", function() {
+//   if (notification.style.right === "0px") {
+//     notification.style.right = "-300px";
+//   } else {
+//     notification.style.right = "0px";
+//   }
+// });
+
+// close_notif.addEventListener("click", function(){
+//     notification.style.right = "-300px";
+// })
+
+// use class change method 
+notif_btn.addEventListener("click", function () {
+    notification.classList.toggle("show");
+});
+
+close_notif.addEventListener("click", function () {
+    notification.classList.remove("show");
+});
+
+
+
