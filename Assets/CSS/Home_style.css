@@ -486,39 +486,40 @@ span{
 
 
 /* Notification Popup */
-.notification{
+#notification{
     position: fixed;
     z-index: 99999;
     width: 300px;
     height: 300px;
     top: 10px;
-    right: 10px;
+    right: -300px;
     background-color: var(--myGreen);
+    transition: right 0.3s ease;
 }
 
-.notification h2 {
+#notification h2 {
     text-align: center;
     margin: 20px;
 }
 
-.notif_box{
-    background-color: #2aaac6;
+#notif_box{
+    background-color: var(--myFONT-w);
     border-radius: 10px;
     margin: 10px;
 }
-.notif_box h3 {
+#notif_box h3 {
     font-size: medium;
     padding: 10px 0px 10px 10px;
     color: var(--text);
 }
-.notif_box p {
+#notif_box p {
     font-size: 15px;
     padding: 10px 0px 10px 10px;
     color: var(--text);
 
 }
 
-.close_notif{
+#close_notif{
     position: absolute;
     top: 10px;
     left: 10px;

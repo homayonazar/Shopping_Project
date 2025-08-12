@@ -161,3 +161,22 @@ close_cart.addEventListener("click",function(){
     cart_side.style.right = "-280px";
 })
 
+// Notification - close 
+
+let notification = document.getElementById("notification");
+let close_notif = document.getElementById("close_notif");
+let notif_btn = document.getElementById("notif_btn");
+
+notif_btn.addEventListener("click", function() {
+  if (notification.style.right === "0px") {
+    notification.style.right = "-300px";
+  } else {
+    notification.style.right = "0px";
+  }
+});
+
+close_notif.addEventListener("click", function(){
+    notification.style.right = "-300px";
+})
+
+
