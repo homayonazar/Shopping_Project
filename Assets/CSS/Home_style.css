@@ -428,7 +428,7 @@ span{
 }
 
 /* Cart Menu */
-.cart_side {
+#cart_side {
     right: -280px;
     position: fixed;
     width: 280px;
@@ -438,8 +438,16 @@ span{
     display: flex;
     flex-direction: column; 
     align-items: center;
+    border: 0.1px dotted var(--text);
+
+    transition: right 0.3s ease;
 }
-.cart_side h2 {
+
+#cart_side.active {
+    right: 0;
+}
+
+#cart_side h2 {
     text-align: center;
     color: var(--text);
     padding-top: 50px;
@@ -460,6 +468,71 @@ span{
     margin-top: 10px;
 }
 
+#close_cart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    color: var(--bg);
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: var(--text);
+    font-size: x-large;
+}
+
+
+/* Notification Popup */
+.notification{
+    position: fixed;
+    z-index: 99999;
+    width: 300px;
+    height: 300px;
+    top: 10px;
+    right: 10px;
+    background-color: var(--myGreen);
+}
+
+.notification h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.notif_box{
+    background-color: #2aaac6;
+    border-radius: 10px;
+    margin: 10px;
+}
+.notif_box h3 {
+    font-size: medium;
+    padding: 10px 0px 10px 10px;
+    color: var(--text);
+}
+.notif_box p {
+    font-size: 15px;
+    padding: 10px 0px 10px 10px;
+    color: var(--text);
+
+}
+
+.close_notif{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    color: var(--bg);
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: var(--text);
+    font-size: x-large;
+}
 
 
 /* ===== Manu - Navigation ====== */

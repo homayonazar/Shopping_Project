@@ -144,15 +144,20 @@ close_btn.addEventListener("click", function(){
 
 // Cart Click :
 
-let fa_solid = document.getElementById("fa-solid");
+let cart_btn = document.getElementById("cart_btn");
 let cart_side = document.getElementById("cart_side");
+let close_cart = document.getElementById("close_cart");
 
 
-
-fa_solid.addEventListener("click", function() {
+cart_btn.addEventListener("click", function() {
   if (cart_side.style.right === "0px") {
     cart_side.style.right = "-280px";
   } else {
     cart_side.style.right = "0px";
   }
 });
+
+close_cart.addEventListener("click",function(){
+    cart_side.style.right = "-280px";
+})
+
