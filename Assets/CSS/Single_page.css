@@ -5,12 +5,17 @@
     /* background-color: #ffffff; */
 }
 
+.breadcrumbs a,.breadcrumbs span {
+    color: var(--text);
+}
+
 .breadcrumbs a::after {
-    content: '';
+    content: '>';
     display: inline-block;
     width: 10px;
+    padding-bottom: 10px;
+    color: var(--text);
     height: 10px;
-    background: url(../Images/Icons/right-arrow-svgrepo-com.svg) center center no-repeat;
     background-size: contain;
     margin: 0 8px;
     vertical-align: middle;
@@ -21,10 +26,10 @@
 .prodict_page {
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: var(--bg);
   border-radius: 25px;
   margin: 30px 0;
-  border: 0.1px dotted #6c757d;
+  border: 0.1px dotted var(--myFONT-B);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,7 +52,7 @@
   margin: 40px 0;
   width: 47%;
   height: auto;
-  background-color: rgb(241, 255, 250);
+  background-color: var(--myBlue);
   border-radius: 15px;
 }
 
@@ -181,6 +186,7 @@
     height: 30px;
     border-radius: 5px;
     border: #6c757d dotted 0.1px;
+    background-color: var(--bg);
     
 }
 
@@ -261,33 +267,6 @@
     /* user-select: none; */
     line-height: 1.4;
 }
-
-/*  ریسپانسیو موبایل */
-@media (max-width: 768px) {
-    .cmnt_brdr {
-        flex: 0 0 100%;
-    }
-}
-
-/*  ریسپانسیو برای موبایل */
-@media (max-width: 768px) {
-    .cmnt_brdr {
-        flex: 0 0 100%;
-    }
-}
-
-
-@media screen and (max-width : 540px ) {
-    .right_section{width: 100%;}
-    .left_section{width: 100%;}
-}
-
-@media screen and (max-width : 700px ) {
-    .right_section{width: 100%;}
-    .left_section{width: 100%;}
-}
-
-
 
 
 #myBtn {

@@ -8,7 +8,7 @@
     --table: #e8e8e8 ;
     --navbar: #ebebeb ;
     --myFONT-w: #ffffff;
-    --myFONT-B: #000000;
+    --myFONT-B: #2e2e2e;
     --myFontColor: #2aaac6;
     --myWhite: #eff1f4;
     --myBG: linear-gradient(90deg,
@@ -238,6 +238,7 @@ span{
 
 .Day-light{
     width: 75px;
+    height: 32px;
 }
 .Day-light i{
     font-weight: bold;
