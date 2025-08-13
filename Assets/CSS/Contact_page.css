@@ -1,4 +1,5 @@
-.contact_section {
+
+.contact_section{
     width: 100%;
     height: auto;
     height: auto;
@@ -16,26 +17,23 @@
     /* border-bottom: 1px #191919 solid; */
 }
 
-.row {
+.row{
     display: flex;
     flex-wrap: wrap;
 }
 
-.contact_input {
+.contact_input{
     width: 50%;
-    margin-bottom: 35px;
+    margin-bottom :35px;
     /* background-color: #007bff;
     border: 2px #dc2424; */
 }
 
-
-
 .contact_input label {
-    margin-bottom: 10px;
+    margin-bottom :10px;
     display: block;
     color: var(--text);
 }
-
 .contact_input input {
     width: 100%;
     padding: 10px;
@@ -43,14 +41,14 @@
     border-radius: 3px;
 }
 
-.contact_area {
+.contact_area{
     width: 100%;
     margin-bottom: 35px;
 }
 
-.contact_area label {
+.contact_area label{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom :10px;
     color: #777;
 }
 
@@ -74,8 +72,7 @@
     font-size: large;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-.btnnn:hover {
+.btnnn:hover{
     color: rgb(61, 61, 61);
     background-color: #d0e7ff;
     border: none;
@@ -90,41 +87,39 @@
 }
 
 hr {
-    width: 100%;
-    max-width: 900px;
-    margin: 30px auto;
-    border: 0.1px rgb(112, 112, 112) dotted;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 0.1px rgb(112, 112, 112) dotted;
 }
 
-
-.seccnd_section {
+    
+.seccnd_section{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 45px;
 }
 
-.contact_left {
+.contact_left{
     width: 50%;
     height: auto;
     display: flex;
     justify-content: center;
 }
-
-.contact_left img {
-    width: 250px;
+.contact_left img{
+    width: 250px ;
     height: auto;
-
+    
 }
 
 
-.contact_right {
+.contact_right{
     width: 50%;
     height: auto;
 }
-
 .contact_right p {
     font-size: large;
-    font-weight: 200;
+    font-weight:200 ;
 }
 
 
@@ -134,10 +129,6 @@ textarea:focus,
 button:focus {
     outline: none;
 }
-
-
-
-
 
 
 @media screen and (min-width : 1500px) {
