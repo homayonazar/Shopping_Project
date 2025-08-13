@@ -2,19 +2,21 @@
     width: 100%;
     height: auto;
     height: auto;
-    background-color: #fff;
+    background-color: var(--bg);
     border-radius: 25px;
-    border: 0.1px dotted #6c757d;
+    border: 0.1px dotted var(--text);
 }
 
 .contact_us h1 {
-    color: #464646;
+    color: var(--text);
     font-weight: 200;
     font-size: x-large;
     padding: 25px;
     text-align: center;
     /* border-bottom: 1px #191919 solid; */
 }
+
+
 
 .row {
     display: flex;
@@ -26,21 +28,14 @@
     margin-bottom: 35px;
     /* background-color: #007bff;
     border: 2px #dc2424; */
+    background-color: var();
 }
 
-@media screen and (max-width : 540px) {
-    .contact_input {
-        width: 100%;
-    }
-
-    /* .contact_right{width: 100%;}
-    .contact_left{width: 100%;} */
-}
 
 .contact_input label {
     margin-bottom: 10px;
     display: block;
-    color: #777;
+    color: var(--text);
 }
 
 .contact_input input {
@@ -148,28 +143,58 @@ button:focus {
 
 
 @media screen and (min-width : 1500px) {
-
+    .contact_us .container {
+        padding: 0px 300px;
+    }
 }
 
 
 @media screen and (max-width : 1500px) {
-
+    .contact_us .container {
+        padding: 0px 100px;
+    }
 }
 
 @media screen and (max-width : 1300px) {
-
+    .contact_us .container {
+        padding: 0px 80px;
+    }
 }
 
-@media screen and (max-width : 1050px)
-/* Ipad mini*/
-    {}
+@media screen and (max-width : 1050px) {
+    .contact_us .container {
+        padding: 0px 60px;
+    }
+
+    .contact_input {
+        width: 100%;
+    }
+
+    .contact_left,
+    .contact_right {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width : 750px) {
-
+    .contact_us .container {
+        padding: 0px 50px;
+    }
 }
 
 @media (max-width: 600px) {}
 
 @media screen and (max-width : 540px) {
-    
+    .contact_us .container {
+        padding: 0px 30px;
+
+        .contact_input {
+            width: 100%;
+        }
+
+        .contact_left,
+        .contact_right {
+            width: 100%;
+        }
+    }
 }
