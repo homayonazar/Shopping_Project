@@ -129,6 +129,7 @@ let login_btn = document.getElementById("login_btn");
 let popup_menu = document.getElementById("popup_login");
 let close_btn = document.getElementById("close");
 
+
 login_btn.addEventListener("click", function(){
     if (popup_menu.style.visibility === "visible") {
         popup_menu.style.visibility = "hidden";
@@ -136,6 +137,7 @@ login_btn.addEventListener("click", function(){
         popup_menu.style.visibility = "visible";
     }
 });
+
 
 close_btn.addEventListener("click", function(){
     popup_menu.style.visibility = "hidden";
@@ -190,3 +192,18 @@ close_notif.addEventListener("click", function () {
 
 
 
+
+
+
+let cart_side2 = document.getElementById("cart_side2");
+cart_side2.addEventListener("click",function(){
+    if (cart_side.style.right === "0px") {
+    cart_side.style.right = "-280px";
+  } else {
+    cart_side.style.right = "0px";
+  }
+})
+notif_btn2.addEventListener("click",function(){
+        notification.classList.toggle("show");
+
+})
