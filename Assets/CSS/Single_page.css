@@ -185,7 +185,8 @@
     padding: 15px;
     gap: 15px;
     box-sizing: border-box;
-    flex: 0 0 calc(50% - 7.5px); /* 2 box in 1 row*/
+    flex: 0 0 calc(50% - 7.5px);
+    /* 2 box in 1 row*/
 }
 
 .cmnt_brdr:hover {
@@ -305,6 +306,7 @@
     .prodict_page_main .container {
         padding: 0px 80px;
     }
+
     .comments .container {
         padding: 0px 80px;
     }
@@ -317,9 +319,11 @@
     .prodict_page_main .container {
         padding: 0px 60px;
     }
+
     .comments .container {
         padding: 0px 60px;
     }
+
     .cmnt_brdr {
         flex: 0 0 100%;
     }
@@ -338,6 +342,7 @@
     .right_section {
         width: 90%;
     }
+
     .comments .container {
         padding: 0px 50px;
     }
