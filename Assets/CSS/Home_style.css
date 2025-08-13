@@ -6,10 +6,9 @@
     --myGreen: #d8efee;
     --myBlue: #d9ebf6;
     --table: #e8e8e8 ;
-    --comment : #f2f2f2 ;
     --navbar: #ebebeb ;
     --myFONT-w: #ffffff;
-    --myFONT-B: #2e2e2e;
+    --myFONT-B: #000000;
     --myFontColor: #2aaac6;
     --myWhite: #eff1f4;
     --myBG: linear-gradient(90deg,
@@ -26,7 +25,6 @@
     --myBlue: #162c3b;
     --navbar: #414a4b ;
     --table: #424b4c ;
-    --comment : #1d2b2a ;
     --myFontColor: #90e0ef;
     --myWhite: #0f2027;
     --myFONT-w: #0f2027;
@@ -240,7 +238,6 @@ span{
 
 .Day-light{
     width: 75px;
-    height: 32px;
 }
 .Day-light i{
     font-weight: bold;
@@ -260,150 +257,53 @@ span{
 
 
 
-.hamburgerMenu {
+.hamburgerMenu{
     top: 40px;
-    width: 40px; 
-    height: 40px;
-    background-color: #2e706e;
-    border-radius: 9px;
+    width: 30px;
+    height: 30px;
+    background-color: #499694;
+    border-radius: 8px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 
     position: fixed;
-    /* margin: 25px 225px 0px 0px; */
+    margin: 25px 225px 0px 0px;
     cursor: pointer;
-    right: 20px;
-    transition: right 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    right: -200px;
+    transition: ease 0.3s;
 
-    z-index: 100000;
+    z-index: 10000;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
 }
 
-.hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 3px 0;
-    border-radius: 2px;
+.hamburger{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 2px 0;
+
 }
 
 
-/* .sideMenu{
-    width: 300px;
+.sideMenu{
+    width: 200px;
     height: 100%;
     background-color: #b9b9b9;
     position: fixed;
-    right: 10px;
+    right: -200px;
     transition: ease 0.3s;
     z-index: 10000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-} */
-.sideMenu button {
-    width: 80%;
-    margin: 10px 0;
 }
 
 
-.sideMenu {
-    width: 300px;
-    height: 100%;
-    background-color: var(--myBlue);
-    color: #f0f0f0;
-    position: fixed;
-    top: 0;
-    right: -340px;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    transition: right 0.3s ease;
-    z-index: 99999;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.main_header .sideMenu .nav{
+    margin: 50px;
 }
-
-.sideMenu.open {
-    right: 0;
-}
-
-.sideMenu h2 u {
-    font-weight: 700;
-    font-size: 24px;
-    text-decoration: underline;
-    margin-bottom: 30px;
-    color:var(--text);
-    text-align: center;
-    display: block;
-    width: 100%;
-}
-
-.sideMenu nav ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.sideMenu nav ul li {
-    padding: 12px 15px;
-    border-bottom: 1px solid #558080;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.2s ease;
-    border-radius: 6px;
-}
-
-.sideMenu nav ul li:hover {
-    background-color: #476a6a;
-}
-
-.sideMenu button {
-    width: 100%;
-    padding: 12px 0;
-    margin: 8px 0;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #2f4f4f;
-    background-color: #aad4d4;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.sideMenu button:hover {
-    background-color: #91c7c7;
-    color: #1f3939;
-}
-
-/* @media (max-width: 480px) {
-    .sideMenu {
-        width: 100%;
-        right: -100%;
-    }
-    .sideMenu.open {
-        right: 0;
-    }
-    .sideMenu h2 u {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .sideMenu nav ul li {
-        font-size: 16px;
-        padding: 10px 12px;
-    }
-    .sideMenu button {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-} */
 
 
 
@@ -454,7 +354,7 @@ span{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     position: fixed;
-    z-index: 999999;
+    z-index: 99999;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -728,7 +628,7 @@ nav{
     /* برای اینکه منو ها روبروی هم باشن نه زیر هم */
     padding-right: 20px;
     margin: 4px;
-    position: relative;
+    position: relative; /* برای منو ها */
 }
 .nav_ul > li > a,
 .nav_ul > li > a >i>span {
@@ -1141,9 +1041,9 @@ footer .container{
     /* background-color: #abdedd; */
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
-    align-items: center;   
-    justify-content: flex-start;
+    flex-direction: column; /* باعث میشه محتواها زیر هم بیان */
+    align-items: center;     /* وسط‌چین افقی */
+    justify-content: flex-start; /* محتوای بالا شروع بشه */
     overflow: hidden;
 
 }
