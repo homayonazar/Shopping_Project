@@ -130,8 +130,6 @@ let login_btn = document.getElementById("login_btn");
 let popup_menu = document.getElementById("popup_login");
 let close_btn = document.getElementById("close");
 let login_btn2 = document.getElementById("login_btn2");
-let login_btn3 = document.getElementById("login_btn3");
-
 
 login_btn.addEventListener("click", function(){
     if (popup_menu.style.visibility === "visible") {
@@ -148,14 +146,6 @@ login_btn2.addEventListener("click",function(){
         popup_menu.style.visibility = "visible";
     }
 })
-login_btn3.addEventListener("click",function(){
-    if (popup_menu.style.visibility === "visible") {
-        popup_menu.style.visibility = "hidden";
-    } else {
-        popup_menu.style.visibility = "visible";
-    }
-})
-
 
 close_btn.addEventListener("click", function(){
     popup_menu.style.visibility = "hidden";
@@ -167,7 +157,7 @@ close_btn.addEventListener("click", function(){
 let cart_btn = document.getElementById("cart_btn");
 let cart_side = document.getElementById("cart_side");
 let close_cart = document.getElementById("close_cart");
-let cart_side2 = document.getElementById("cart_side2");
+
 
 cart_btn.addEventListener("click", function() {
   if (cart_side.style.right === "0px") {
@@ -176,14 +166,6 @@ cart_btn.addEventListener("click", function() {
     cart_side.style.right = "0px";
   }
 });
-
-cart_side2.addEventListener("click",function(){
-    if (cart_side.style.right === "0px") {
-    cart_side.style.right = "-280px";
-  } else {
-    cart_side.style.right = "0px";
-  }
-})
 
 close_cart.addEventListener("click",function(){
     cart_side.style.right = "-280px";
@@ -194,7 +176,7 @@ close_cart.addEventListener("click",function(){
 let notification = document.getElementById("notification");
 let close_notif = document.getElementById("close_notif");
 let notif_btn = document.getElementById("notif_btn");
-let notif_btn2 = document.getElementById("notif_btn2");
+
 // notif_btn.addEventListener("click", function() {
 //   if (notification.style.right === "0px") {
 //     notification.style.right = "-300px";
@@ -212,14 +194,24 @@ notif_btn.addEventListener("click", function () {
     notification.classList.toggle("show");
 });
 
-notif_btn2.addEventListener("click",function(){
-        notification.classList.toggle("show");
-
-})
-
 close_notif.addEventListener("click", function () {
     notification.classList.remove("show");
 });
 
 
 
+
+
+
+let cart_side2 = document.getElementById("cart_side2");
+cart_side2.addEventListener("click",function(){
+    if (cart_side.style.right === "0px") {
+    cart_side.style.right = "-280px";
+  } else {
+    cart_side.style.right = "0px";
+  }
+})
+notif_btn2.addEventListener("click",function(){
+        notification.classList.toggle("show");
+
+})
