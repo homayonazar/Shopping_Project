@@ -32,4 +32,4 @@ A modern and responsive **online store frontend** built with **HTML**, **CSS**, 
 
 ## 🌐 Live Demo
 
-👉 [**Click here to view the live project**](https://homayonazar.com/Projects/Shooping_Project/)
+👉 [**Click here to view the live project**](https://homayonazar.github.io/Shopping_Project)
