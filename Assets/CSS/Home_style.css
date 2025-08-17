@@ -662,7 +662,7 @@ span{
 .about_icon{
     width: 17px;
     height: 17px;
-    background: url(../Images/Icons/dropdown.svg) center no-repeat;
+    background: url(../IMAGES/Icons/dropdown.svg) center no-repeat;
     background-size: cover;
     display: inline-block;
     vertical-align: -5px;
