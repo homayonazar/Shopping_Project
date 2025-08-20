@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(47, 47, 47);
+}
+
+p {
+    color: aliceblue;
+}
+
+.wholePanel {
+
+}
+
+.menu_sec_left {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_sec_left > nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_sec_left > nav > ul> li {
+    color: aliceblue;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.main_sec_right {
+    margin-left: 300px;              
+    width: calc(100% - 300px);     
+    min-height: 100vh; 
+    background-color: rgb(47, 47, 47);
+    padding: 20px; 
+}
