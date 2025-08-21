@@ -17,6 +17,9 @@
         rgb(235, 235, 235) 50%,
         rgba(255, 255, 255, 1) 100%);
     --textColor: #000000;
+    --dashboard-bg : ;
+    --dashboard-font: ;
+    --dashboard-hover: #98aead;
 }
 
 .dark {
