@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooping | Admin Panel</title>
+    <link rel="icon" type="Favicon" href="../IMAGES/Favicon.png">
+    <link rel="stylesheet" href="../CSS/Contact_page.css">
+    <link rel="stylesheet" href="../CSS/Home_style.css">
+    <link rel="stylesheet" href="../CSS/Single_page.css">
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="../CSS/admin-responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta name="description" content="Buy high-quality products at the best prices.[]" />
+    <meta name="keywords" content="shopping, e-commerce, online store, buy, products" />
+    <meta name="author" content="Amirreza Abdollahi" />
+</head>
+
+<body>
+
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class="bx bxl-c-plus-plus"></i>
+            <span class="logo_name">Homayonazar</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-list-ul"></i>
+                    <span class="links_name">Order list</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-book-alt"></i>
+                    <span class="links_name">Total order</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-message"></i>
+                    <span class="links_name">Messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-heart"></i>
+                    <span class="links_name">Favrorites</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-pie-chart-alt-2"></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-cog"></i>
+                    <span class="links_name">Setting</span>
+                </a>
+            </li>
+            <li class="Theme-toggle">
+                <a href="#" id="themeToggleBtn">
+                    <i class='bx bx-moon' id="themeIcon"></i>
+                    <span class="links_name">Day | Night</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--  -->
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class="bx bx-menu sidebarBtn"></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search..." />
+                <i class="bx bx-search"></i>
+            </div>
+            <div class="profile-details">
+                <img src="../IMAGES/profile.png" alt="" />
+                <span class="admin_name">Homayonazar</span>
+                <i class="bx bx-chevron-down"></i>
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Order</div>
+                        <div class="number">$40.000</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Sales</div>
+                        <div class="number">$30.000</div>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Profit</div>
+                        <div class="number">$12.000</div>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Return</div>
+                        <div class="number">$2.000</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="sales-boxes">
+                <div class="recent-sales box">
+                    <div class="title">Recent Sales</div>
+                    <div class="sales-details">
+                        <ul class="details">
+                            <li class="topic">Date</li>
+                            <li><a href="#">02 Jan 2021</a></li>
+                            <li><a href="#">02 Jan 2021</a></li>
+                            <li><a href="#">02 Jan 2021</a></li>
+                            <li><a href="#">02 Jan 2021</a></li>
+                            <li><a href="#">02 Jan 2021</a></li>
+                            <li><a href="#">02 Jan 2021</a></li>
+                            <li><a href="#">02 Jan 2021</a></li>
+                            <li><a href="#">02 Jan 2021</a></li>
+
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Customer</li>
+                            <li><a href="#">Amirreza</a></li>
+                            <li><a href="#">Abdollahi</a></li>
+                            <li><a href="#">Homayonazar</a></li>
+                            <li><a href="#">Amir</a></li>
+                            <li><a href="#">Reza</a></li>
+                            <li><a href="#">Ali</a></li>
+                            <li><a href="#">Mohammad</a></li>
+                            <li><a href="#">Abdollah</a></li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Sales</li>
+                            <li><a href="#">Delivered</a></li>
+                            <li><a href="#">Pending</a></li>
+                            <li><a href="#">Returned</a></li>
+                            <li><a href="#">Delivered</a></li>
+                            <li><a href="#">Pending</a></li>
+                            <li><a href="#">Returned</a></li>
+                            <li><a href="#">Delivered</a></li>
+                            <li><a href="#">Pending</a></li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Total</li>
+                            <li><a href="#">$204.98</a></li>
+                            <li><a href="#">$24.55</a></li>
+                            <li><a href="#">$25.88</a></li>
+                            <li><a href="#">$170.66</a></li>
+                            <li><a href="#">$56.56</a></li>
+                            <li><a href="#">$44.95</a></li>
+                            <li><a href="#">$67.33</a></li>
+                            <li><a href="#">$23.53</a></li>
+                        </ul>
+                    </div>
+                    <div class="button">
+                        <a href="#">See All</a>
+                    </div>
+                </div>
+                <div class="top-sales box">
+                    <div class="title">Top Seling Product</div>
+                    <ul class="top-sales-details">
+                        <li>
+                            <a href="#">
+                                <img src="../IMAGES/Product_images/img-1.jpg" alt="" />
+                                <span class="product">Product Number - 1</span>
+                            </a>
+                            <span class="price">$1107</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../IMAGES/Product_images/img - 2.jpg" alt="" />
+                                <span class="product">HProduct Number - 2</span>
+                            </a>
+                            <span class="price">$1567</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../IMAGES/Product_images/img - 3.jpg" alt="" />
+                                <span class="product">Product Number - 3</span>
+                            </a>
+                            <span class="price">$1234</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../IMAGES/Product_images/img - 4.jpg" alt="" />
+                                <span class="product">Product Number - 4</span>
+                            </a>
+                            <span class="price">$2312</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../IMAGES/Product_images/img - 5.jpg" alt="" />
+                                <span class="product">Product Number - 5</span>
+                            </a>
+                            <span class="price">$1456</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../IMAGES/Product_images/img - 6.jpg" alt="" />
+                                <span class="product">Product Number - 6</span>
+                            </a>
+                            <span class="price">$2345</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="../IMAGES/Product_images/img - 7.jpg" alt="" />
+                                <span class="product">Product Number - 7</span>
+                            </a>
+                            <span class="price">$2345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="../JS/admin.js"></script>
+</body>
+
+</html>
